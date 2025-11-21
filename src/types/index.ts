@@ -27,7 +27,11 @@ export interface ProfileData {
   image: string;
   content: {
     name: string;
-    role: string;
+    birthPlace: string;
+    birthDate: string;
+    email: string;
+    profession: string;
+    hobbies: string;
     description: string;
   };
 }

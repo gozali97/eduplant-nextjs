@@ -36,11 +36,15 @@
     },
     "profile": {
       "id": "profile",
-      "title": "Profil Pengembang",
+      "title": "Profil",
       "image": "/page/page-profile-1.png",
       "content": {
-        "name": "Gozali",
-        "role": "Mahasiswa ITK",
+        "name": "Ida Fauziyyah",
+        "birthPlace": "Pangkalan Bun",
+        "birthDate": "17 Oktober 1999",
+        "email": "idafauziyyah13@gmail.com",
+        "profession": "Guru",
+        "hobbies": "Memasak & Membaca",
         "description": "Aplikasi ini dibuat sebagai media pembelajaran interaktif untuk membantu siswa memahami materi bagian-bagian tumbuhan dengan lebih mudah dan menyenangkan."
       }
     },
@@ -181,7 +185,7 @@
     "intro": {
       "title": "Kuis Pengetahuan",
       "description": "Jawablah pertanyaan berikut untuk menguji pemahamanmu tentang bagian-bagian tumbuhan.",
-      "image": "/page/page-quiz-home.png"
+      "image": "/page/page-1.png"
     },
     "questions": [
       {
@@ -195,7 +199,7 @@
         ],
         "points": 10,
         "explanation": "Akar berfungsi menyerap air dan mineral dari tanah.",
-        "image": "/page/page-quiz-1.png"
+        "image": "/page/page-1.png"
       },
       {
         "id": 2,
@@ -208,7 +212,7 @@
         ],
         "points": 10,
         "explanation": "Fotosintesis adalah proses pembuatan makanan pada tumbuhan dengan bantuan cahaya matahari.",
-        "image": "/page/page-quiz-2.png"
+        "image": "/page/page-1.png"
       },
       {
         "id": 3,
@@ -221,7 +225,7 @@
         ],
         "points": 10,
         "explanation": "Benang sari adalah alat kelamin jantan, sedangkan putik adalah alat kelamin betina.",
-        "image": "/page/page-quiz-3.png"
+        "image": "/page/page-1.png"
       },
       {
         "id": 4,
@@ -234,7 +238,7 @@
         ],
         "points": 10,
         "explanation": "Dikotil adalah tumbuhan yang bijinya berkeping dua.",
-        "image": "/page/page-quiz-4.png"
+        "image": "/page/page-1.png"
       },
       {
         "id": 5,
@@ -251,7 +255,7 @@
         ],
         "points": 10,
         "explanation": "Batang berfungsi menopang tubuh tumbuhan dan sebagai jalur pengangkutan.",
-        "image": "/page/page-quiz-5.png"
+        "image": "/page/page-1.png"
       },
       {
         "id": 6,
@@ -264,7 +268,7 @@
         ],
         "points": 10,
         "explanation": "Mahkota bunga biasanya berwarna mencolok untuk menarik serangga penyerbuk.",
-        "image": "/page/page-quiz-6.png"
+        "image": "/page/page-1.png"
       },
       {
         "id": 7,
@@ -277,7 +281,7 @@
         ],
         "points": 10,
         "explanation": "Padi dan bambu adalah contoh tumbuhan berbatang rumput yang berongga.",
-        "image": "/page/page-quiz-7.png"
+        "image": "/page/page-1.png"
       },
       {
         "id": 8,
@@ -290,7 +294,7 @@
         ],
         "points": 10,
         "explanation": "Klorofil adalah pigmen hijau yang menyerap cahaya untuk fotosintesis.",
-        "image": "/page/page-quiz-8.png"
+        "image": "/page/page-1.png"
       },
       {
         "id": 9,
@@ -303,7 +307,7 @@
         ],
         "points": 10,
         "explanation": "Tebu menyimpan cadangan gula di batangnya.",
-        "image": "/page/page-quiz-9.png"
+        "image": "/page/page-1.png"
       },
       {
         "id": 10,
@@ -316,13 +320,13 @@
         ],
         "points": 10,
         "explanation": "Tumbuhan bernapas melalui stomata yang terdapat pada daun.",
-        "image": "/page/page-quiz-10.png"
+        "image": "/page/page-1.png"
       }
     ],
     "end": {
       "title": "Selamat!",
       "message": "Kamu telah menyelesaikan kuis.",
-      "image": "/page/page-quiz-end.png"
+      "image": "/page/page-1.png"
     }
   }
 }
