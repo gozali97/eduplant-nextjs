@@ -1,0 +1,328 @@
+{
+  "appInfo": {
+    "title": "Media Pembelajaran Interaktif",
+    "subtitle": "Bagian-Bagian Tumbuhan",
+    "description": "Media pembelajaran interaktif tentang bagian-bagian tumbuhan untuk pendidikan tingkat Sekolah Dasar.",
+    "version": "1.0.0",
+    "author": "Tim Pengembang",
+    "year": "2025"
+  },
+  "pages": {
+    "home": {
+      "id": "home",
+      "title": "Beranda",
+      "image": "/page/page-1.png",
+      "navigation": [
+        {
+          "id": "profile",
+          "label": "Profil",
+          "path": "/profile",
+          "icon": "user"
+        },
+        {
+          "id": "materi",
+          "label": "Materi",
+          "path": "/materi",
+          "icon": "book"
+        },
+        { "id": "quiz", "label": "Kuis", "path": "/quiz", "icon": "puzzle" },
+        {
+          "id": "references",
+          "label": "Referensi",
+          "path": "/references",
+          "icon": "list"
+        }
+      ]
+    },
+    "profile": {
+      "id": "profile",
+      "title": "Profil Pengembang",
+      "image": "/page/page-profile-1.png",
+      "content": {
+        "name": "Gozali",
+        "role": "Mahasiswa ITK",
+        "description": "Aplikasi ini dibuat sebagai media pembelajaran interaktif untuk membantu siswa memahami materi bagian-bagian tumbuhan dengan lebih mudah dan menyenangkan."
+      }
+    },
+    "competencies": {
+      "title": "Capaian & Tujuan Pembelajaran",
+      "items": [
+        {
+          "id": "cp-tp-1",
+          "title": "Capaian Pembelajaran",
+          "image": "/page/page-cp-tp-1.png",
+          "content": "Peserta didik mampu mengidentifikasi bagian-bagian tubuh tumbuhan (akar, batang, daun, bunga, buah, dan biji) dan mendeskripsikan fungsinya."
+        },
+        {
+          "id": "cp-tp-2",
+          "title": "Tujuan Pembelajaran",
+          "image": "/page/page-cp-tp-2.png",
+          "content": "1. Siswa dapat menyebutkan bagian-bagian utama tumbuhan.\n2. Siswa dapat menjelaskan fungsi dari setiap bagian tumbuhan.\n3. Siswa dapat memahami hubungan antara struktur dan fungsi bagian tumbuhan."
+        }
+      ]
+    },
+    "references": {
+      "id": "references",
+      "title": "Daftar Pustaka",
+      "image": "/page/page-refrensi-1.png",
+      "items": [
+        "Buku Siswa IPAS Kelas 4 SD Kurikulum Merdeka",
+        "Sumber Belajar Kemendikbud",
+        "Ensiklopedia Tumbuhan untuk Anak"
+      ]
+    }
+  },
+  "materi": {
+    "title": "Materi Pembelajaran",
+    "subtitle": "Kenali Bagian-Bagian Tumbuhan",
+    "introduction": {
+      "id": "intro",
+      "title": "Pengantar",
+      "image": "/page/pohon-ulin.png",
+      "content": "Tumbuhan memiliki bagian-bagian tubuh yang setiap bagiannya memiliki fungsi tertentu untuk kelangsungan hidupnya. Mari kita pelajari satu per satu!"
+    },
+    "topics": [
+      {
+        "id": "akar",
+        "title": "Akar",
+        "icon": "🌱",
+        "summary": "Bagian tumbuhan yang tertanam di dalam tanah.",
+        "pages": [
+          {
+            "id": "akar-1",
+            "image": "/page/page-materi-akar-1.png",
+            "content": "Akar adalah bagian tumbuhan yang umumnya berada di dalam tanah. Fungsi akar antara lain:\n1. Menyerap air dan zat hara (mineral) dari dalam tanah.\n2. Menopang tumbuhan agar berdiri kokoh.\n3. Menyimpan cadangan makanan (pada tumbuhan tertentu seperti singkong dan wortel).\n\nAda dua jenis akar utama: Akar Serabut (pada tumbuhan berkeping satu/monokotil) dan Akar Tunggang (pada tumbuhan berkeping dua/dikotil)."
+          }
+        ]
+      },
+      {
+        "id": "batang",
+        "title": "Batang",
+        "icon": "🌿",
+        "summary": "Bagian tumbuhan yang berada di atas tanah.",
+        "pages": [
+          {
+            "id": "batang-1",
+            "image": "/page/page-materi-batang-1.png",
+            "content": "Batang berfungsi sebagai tempat tumbuhnya daun, bunga, dan buah. Batang juga berfungsi mengangkut air dan mineral dari akar ke daun, serta mengedarkan hasil fotosintesis dari daun ke seluruh tubuh tumbuhan."
+          },
+          {
+            "id": "batang-2",
+            "image": "/page/page-materi-batang-2.png",
+            "content": "Jenis-jenis batang:\n1. Batang Berkayu: Keras dan kuat, contohnya pohon jati dan mangga.\n2. Batang Basah: Lunak dan berair, contohnya bayam dan kangkung.\n3. Batang Rumput: Berongga dan beruas, contohnya padi dan jagung."
+          }
+        ]
+      },
+      {
+        "id": "daun",
+        "title": "Daun",
+        "icon": "🍃",
+        "summary": "Tempat berlangsungnya fotosintesis.",
+        "pages": [
+          {
+            "id": "daun-1",
+            "image": "/page/page-materi-daun-1.png",
+            "content": "Daun biasanya berwarna hijau karena mengandung klorofil. Fungsi utama daun adalah sebagai tempat fotosintesis (pembuatan makanan) dan tempat pernapasan tumbuhan melalui stomata."
+          },
+          {
+            "id": "daun-2",
+            "image": "/page/page-materi-daun-2.png",
+            "content": "Berdasarkan bentuk tulang daunnya, daun dibedakan menjadi:\n1. Menyirip (contoh: mangga)\n2. Menjari (contoh: singkong)\n3. Melengkung (contoh: sirih)\n4. Sejajar (contoh: jagung)"
+          }
+        ]
+      },
+      {
+        "id": "bunga",
+        "title": "Bunga",
+        "icon": "🌸",
+        "summary": "Alat perkembangbiakan tumbuhan.",
+        "pages": [
+          {
+            "id": "bunga-1",
+            "image": "/page/page-materi-bunga-1.png",
+            "content": "Bunga adalah alat perkembangbiakan generatif. Bagian-bagian bunga meliputi:\n- Tangkai bunga\n- Kelopak (melindungi kuncup)\n- Mahkota (menarik serangga)\n- Benang sari (alat kelamin jantan)\n- Putik (alat kelamin betina)"
+          }
+        ]
+      },
+      {
+        "id": "buah",
+        "title": "Buah",
+        "icon": "🍎",
+        "summary": "Pelindung biji dan cadangan makanan.",
+        "pages": [
+          {
+            "id": "buah-1",
+            "image": "/page/page-materi-buah-1.png",
+            "content": "Buah terbentuk setelah penyerbukan. Buah berfungsi melindungi biji dan seringkali menyimpan cadangan makanan. Bagian buah terdiri dari kulit buah, daging buah, dan biji."
+          }
+        ]
+      },
+      {
+        "id": "biji",
+        "title": "Biji",
+        "icon": "🌰",
+        "summary": "Calon tumbuhan baru.",
+        "pages": [
+          {
+            "id": "biji-1",
+            "image": "/page/page-materi-biji-1.png",
+            "content": "Biji merupakan hasil pembuahan. Jika ditanam, biji akan tumbuh menjadi tanaman baru. Biji dibedakan menjadi monokotil (berkeping satu) dan dikotil (berkeping dua)."
+          }
+        ]
+      }
+    ]
+  },
+  "quiz": {
+    "config": {
+      "totalQuestions": 10,
+      "passingScore": 70,
+      "durationMinutes": 15
+    },
+    "intro": {
+      "title": "Kuis Pengetahuan",
+      "description": "Jawablah pertanyaan berikut untuk menguji pemahamanmu tentang bagian-bagian tumbuhan.",
+      "image": "/page/page-quiz-home.png"
+    },
+    "questions": [
+      {
+        "id": 1,
+        "question": "Bagian tumbuhan yang berfungsi menyerap air dan zat hara dari dalam tanah adalah...",
+        "options": [
+          { "id": "a", "text": "Batang", "isCorrect": false },
+          { "id": "b", "text": "Daun", "isCorrect": false },
+          { "id": "c", "text": "Akar", "isCorrect": true },
+          { "id": "d", "text": "Bunga", "isCorrect": false }
+        ],
+        "points": 10,
+        "explanation": "Akar berfungsi menyerap air dan mineral dari tanah.",
+        "image": "/page/page-quiz-1.png"
+      },
+      {
+        "id": 2,
+        "question": "Proses pembuatan makanan pada tumbuhan yang terjadi di daun disebut...",
+        "options": [
+          { "id": "a", "text": "Respirasi", "isCorrect": false },
+          { "id": "b", "text": "Fotosintesis", "isCorrect": true },
+          { "id": "c", "text": "Transpirasi", "isCorrect": false },
+          { "id": "d", "text": "Adaptasi", "isCorrect": false }
+        ],
+        "points": 10,
+        "explanation": "Fotosintesis adalah proses pembuatan makanan pada tumbuhan dengan bantuan cahaya matahari.",
+        "image": "/page/page-quiz-2.png"
+      },
+      {
+        "id": 3,
+        "question": "Alat kelamin jantan pada bunga disebut...",
+        "options": [
+          { "id": "a", "text": "Putik", "isCorrect": false },
+          { "id": "b", "text": "Mahkota", "isCorrect": false },
+          { "id": "c", "text": "Kelopak", "isCorrect": false },
+          { "id": "d", "text": "Benang Sari", "isCorrect": true }
+        ],
+        "points": 10,
+        "explanation": "Benang sari adalah alat kelamin jantan, sedangkan putik adalah alat kelamin betina.",
+        "image": "/page/page-quiz-3.png"
+      },
+      {
+        "id": 4,
+        "question": "Tumbuhan yang memiliki biji berkeping dua disebut...",
+        "options": [
+          { "id": "a", "text": "Monokotil", "isCorrect": false },
+          { "id": "b", "text": "Dikotil", "isCorrect": true },
+          { "id": "c", "text": "Spora", "isCorrect": false },
+          { "id": "d", "text": "Tunas", "isCorrect": false }
+        ],
+        "points": 10,
+        "explanation": "Dikotil adalah tumbuhan yang bijinya berkeping dua.",
+        "image": "/page/page-quiz-4.png"
+      },
+      {
+        "id": 5,
+        "question": "Fungsi utama batang adalah...",
+        "options": [
+          { "id": "a", "text": "Menyerap air", "isCorrect": false },
+          { "id": "b", "text": "Alat pernapasan", "isCorrect": false },
+          {
+            "id": "c",
+            "text": "Menopang daun dan mengangkut zat",
+            "isCorrect": true
+          },
+          { "id": "d", "text": "Menarik serangga", "isCorrect": false }
+        ],
+        "points": 10,
+        "explanation": "Batang berfungsi menopang tubuh tumbuhan dan sebagai jalur pengangkutan.",
+        "image": "/page/page-quiz-5.png"
+      },
+      {
+        "id": 6,
+        "question": "Bagian bunga yang berwarna indah dan berfungsi menarik perhatian serangga adalah...",
+        "options": [
+          { "id": "a", "text": "Kelopak", "isCorrect": false },
+          { "id": "b", "text": "Mahkota", "isCorrect": true },
+          { "id": "c", "text": "Tangkai", "isCorrect": false },
+          { "id": "d", "text": "Putik", "isCorrect": false }
+        ],
+        "points": 10,
+        "explanation": "Mahkota bunga biasanya berwarna mencolok untuk menarik serangga penyerbuk.",
+        "image": "/page/page-quiz-6.png"
+      },
+      {
+        "id": 7,
+        "question": "Contoh tumbuhan yang memiliki batang berongga adalah...",
+        "options": [
+          { "id": "a", "text": "Mangga", "isCorrect": false },
+          { "id": "b", "text": "Jati", "isCorrect": false },
+          { "id": "c", "text": "Padi", "isCorrect": true },
+          { "id": "d", "text": "Singkong", "isCorrect": false }
+        ],
+        "points": 10,
+        "explanation": "Padi dan bambu adalah contoh tumbuhan berbatang rumput yang berongga.",
+        "image": "/page/page-quiz-7.png"
+      },
+      {
+        "id": 8,
+        "question": "Zat hijau daun yang membantu proses fotosintesis disebut...",
+        "options": [
+          { "id": "a", "text": "Stomata", "isCorrect": false },
+          { "id": "b", "text": "Klorofil", "isCorrect": true },
+          { "id": "c", "text": "Kambium", "isCorrect": false },
+          { "id": "d", "text": "Xilem", "isCorrect": false }
+        ],
+        "points": 10,
+        "explanation": "Klorofil adalah pigmen hijau yang menyerap cahaya untuk fotosintesis.",
+        "image": "/page/page-quiz-8.png"
+      },
+      {
+        "id": 9,
+        "question": "Cadangan makanan pada tanaman tebu disimpan di bagian...",
+        "options": [
+          { "id": "a", "text": "Akar", "isCorrect": false },
+          { "id": "b", "text": "Batang", "isCorrect": true },
+          { "id": "c", "text": "Daun", "isCorrect": false },
+          { "id": "d", "text": "Bunga", "isCorrect": false }
+        ],
+        "points": 10,
+        "explanation": "Tebu menyimpan cadangan gula di batangnya.",
+        "image": "/page/page-quiz-9.png"
+      },
+      {
+        "id": 10,
+        "question": "Bagian tumbuhan yang berfungsi sebagai alat pernapasan adalah...",
+        "options": [
+          { "id": "a", "text": "Akar", "isCorrect": false },
+          { "id": "b", "text": "Bunga", "isCorrect": false },
+          { "id": "c", "text": "Buah", "isCorrect": false },
+          { "id": "d", "text": "Daun (Stomata)", "isCorrect": true }
+        ],
+        "points": 10,
+        "explanation": "Tumbuhan bernapas melalui stomata yang terdapat pada daun.",
+        "image": "/page/page-quiz-10.png"
+      }
+    ],
+    "end": {
+      "title": "Selamat!",
+      "message": "Kamu telah menyelesaikan kuis.",
+      "image": "/page/page-quiz-end.png"
+    }
+  }
+}
