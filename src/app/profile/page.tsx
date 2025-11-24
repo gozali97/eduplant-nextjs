@@ -7,8 +7,8 @@ export default function ProfilePage() {
   const data = getProfileData();
 
   return (
-    <div className="min-h-[calc(100vh-4rem)] flex items-center justify-center p-4 md:p-8 bg-gradient-to-b from-background to-muted/30">
-      <Card className="w-full max-w-4xl overflow-hidden border-none shadow-2xl bg-white/80 dark:bg-card/80 backdrop-blur-xl">
+    <div className="min-h-[calc(100vh-4rem)] flex items-center justify-center p-4 md:p-8">
+      <Card className="w-full max-w-4xl overflow-hidden border border-primary/10 shadow-2xl bg-white/85 dark:bg-card/85 backdrop-blur-xl">
         {/* Header with Image */}
         <CardHeader className="p-0">
           <div className="flex items-center justify-center">

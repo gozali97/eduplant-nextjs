@@ -10,17 +10,17 @@ export default function QuizPage() {
 
   return (
     <div className="w-full flex flex-col items-center justify-center min-h-[calc(100vh-4rem)] px-4 md:px-6 py-8">
-      <Card className="w-full max-w-3xl mx-auto overflow-hidden border-none shadow-2xl bg-card/50 backdrop-blur-sm">
-        <div className="relative h-64 md:h-72 w-full bg-gradient-to-r from-primary/20 to-secondary/20">
+      <Card className="w-full max-w-3xl mx-auto overflow-hidden border border-primary/10 shadow-2xl bg-white/85 dark:bg-card/85 backdrop-blur-md">
+        <div className="relative h-64 md:h-72 w-full">
           <Image
             src={quizData.intro.image}
             alt="Quiz Intro"
             fill
-            className="object-contain p-6"
+            className="object-contain p-2"
             priority
           />
         </div>
-        <CardHeader className="text-center space-y-4 pt-8">
+        <CardHeader className="text-center space-y-4 pt-1">
           <CardTitle className="text-3xl md:text-4xl font-bold text-primary">
             {quizData.intro.title}
           </CardTitle>

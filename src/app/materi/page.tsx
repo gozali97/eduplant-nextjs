@@ -8,7 +8,7 @@ export default function MateriPage() {
   const data = getMateriData();
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-background to-muted/20 p-4 md:p-8">
+    <div className="min-h-screen p-4 md:p-8">
       <div className="max-w-6xl mx-auto space-y-8">
         {/* Header Section */}
         <div className="text-center space-y-4 py-8">
@@ -21,7 +21,7 @@ export default function MateriPage() {
         </div>
 
         {/* Introduction Card */}
-        <div className="bg-white/60 dark:bg-black/40 backdrop-blur-md rounded-3xl p-6 md:p-8 shadow-lg border border-white/20">
+        <div className="bg-white/75 dark:bg-black/50 backdrop-blur-md rounded-3xl p-6 md:p-8 shadow-lg border border-primary/10">
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div className="relative aspect-video md:aspect-auto md:h-[300px] rounded-2xl overflow-hidden shadow-md">
               <Image
@@ -47,7 +47,7 @@ export default function MateriPage() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {data.topics.map((topic, index) => (
             <Link key={topic.id} href={`/materi/${topic.id}`} className="group">
-              <Card className="h-full overflow-hidden border-none shadow-md hover:shadow-xl transition-all duration-300 bg-white/80 dark:bg-card/80 backdrop-blur-sm hover:-translate-y-2">
+              <Card className="h-full overflow-hidden border border-primary/10 shadow-md hover:shadow-xl transition-all duration-300 bg-white/85 dark:bg-card/85 backdrop-blur-md hover:-translate-y-2">
                 <CardContent className="p-6 flex flex-col h-full relative">
                   <div className="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
                     <span className="text-8xl">{topic.icon}</span>

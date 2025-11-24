@@ -39,3 +39,12 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Windows system files
+Thumbs.db
+
+# Large executable files
+*.exe
+
+# Smart Apps Creator
+public/Smart Apps Creator*

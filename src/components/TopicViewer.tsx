@@ -31,7 +31,7 @@ export function TopicViewer({ topic }: TopicViewerProps) {
   };
 
   return (
-    <div className="min-h-screen bg-muted/30 flex flex-col">
+    <div className="min-h-screen flex flex-col">
       {/* Top Navigation Bar */}
       <div className="bg-background/80 backdrop-blur-md border-b sticky top-0 z-10 px-4 py-3 shadow-sm">
         <div className="max-w-7xl mx-auto flex items-center justify-between">
@@ -70,10 +70,10 @@ export function TopicViewer({ topic }: TopicViewerProps) {
             transition={{ duration: 0.4, ease: "easeOut" }}
             className="w-full"
           >
-            <Card className="overflow-hidden border-none shadow-2xl bg-background/60 backdrop-blur-xl ring-1 ring-white/20">
+            <Card className="overflow-hidden border border-primary/10 shadow-2xl bg-white/85 dark:bg-card/85 backdrop-blur-xl">
               <div className="grid lg:grid-cols-2 min-h-[60vh]">
                 {/* Image Section */}
-                <div className="relative bg-gradient-to-br from-muted/50 to-primary/5 p-8 flex items-center justify-center min-h-[300px] lg:min-h-full border-b lg:border-b-0 lg:border-r border-border/50">
+                <div className="relative bg-primary/5 p-8 flex items-center justify-center min-h-[300px] lg:min-h-full border-b lg:border-b-0 lg:border-r border-border/50">
                   <div className="relative w-full h-full min-h-[300px] max-h-[500px]">
                     <Image
                       src={currentPage.image}
@@ -86,7 +86,7 @@ export function TopicViewer({ topic }: TopicViewerProps) {
                 </div>
 
                 {/* Text Section */}
-                <div className="p-8 md:p-12 flex flex-col justify-center bg-white/40 dark:bg-black/20">
+                <div className="p-8 md:p-12 flex flex-col justify-center bg-white/50 dark:bg-black/30">
                   <div className="prose dark:prose-invert max-w-none">
                     <h2 className="text-3xl font-bold mb-6 text-primary border-b pb-4 inline-block">
                       Penjelasan

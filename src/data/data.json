@@ -11,26 +11,42 @@
     "home": {
       "id": "home",
       "title": "Beranda",
-      "image": "/page/page-1.png",
+      "image": "/bg-main-1.jpg",
       "navigation": [
         {
           "id": "profile",
           "label": "Profil",
           "path": "/profile",
-          "icon": "user"
+          "icon": "user",
+          "image": "/btn/profile-btn.png"
         },
         {
           "id": "materi",
           "label": "Materi",
           "path": "/materi",
-          "icon": "book"
+          "icon": "book",
+          "image": "/btn/materi-png.png"
         },
-        { "id": "quiz", "label": "Kuis", "path": "/quiz", "icon": "puzzle" },
+        {
+          "id": "quiz",
+          "label": "Kuis",
+          "path": "/quiz",
+          "icon": "puzzle",
+          "image": "/btn/quiz-btn.png"
+        },
+        {
+          "id": "cp-tp",
+          "label": "CP & TP",
+          "path": "/cp-tp",
+          "icon": "target",
+          "image": "/btn/cp-btn.png"
+        },
         {
           "id": "references",
           "label": "Referensi",
           "path": "/references",
-          "icon": "list"
+          "icon": "list",
+          "image": "/btn/referensi-btn.png"
         }
       ]
     },
@@ -68,11 +84,20 @@
     "references": {
       "id": "references",
       "title": "Daftar Pustaka",
-      "image": "/page/page-refrensi-1.png",
+      "image": "/assets/book.png",
       "items": [
-        "Buku Siswa IPAS Kelas 4 SD Kurikulum Merdeka",
-        "Sumber Belajar Kemendikbud",
-        "Ensiklopedia Tumbuhan untuk Anak"
+        {
+          "title" : "Buku Siswa IPAS Kelas 4 SD Kurikulum Merdeka",
+          "link"  : "https://read.bookcreator.com/qjnmWlnSZshY8M7sU5uBnqD13qY2/b4oYt8uaTJahuMGulz8xgA/OKAxls-DRhimODyef9KHUw-right"
+        },
+        {
+          "title" : "Sumber Belajar Video",
+          "link"  : "https://www.youtube.com/watch?v=Lamxt6IHoXI"
+        },
+        {
+          "title" : "Ensiklopedia Tumbuhan untuk Anak",
+          "link"  : "https://fliphtml5.com/cbdwk/dnvj/BAGIAN_TUBUH_TUMBUHAN_DAN_FUNGSINYA/"
+        }
       ]
     }
   },
@@ -94,7 +119,7 @@
         "pages": [
           {
             "id": "akar-1",
-            "image": "/page/page-materi-akar-1.png",
+            "image": "/assets/image/Pohon_Ulin.jpg",
             "content": "Akar adalah bagian tumbuhan yang umumnya berada di dalam tanah. Fungsi akar antara lain:\n1. Menyerap air dan zat hara (mineral) dari dalam tanah.\n2. Menopang tumbuhan agar berdiri kokoh.\n3. Menyimpan cadangan makanan (pada tumbuhan tertentu seperti singkong dan wortel).\n\nAda dua jenis akar utama: Akar Serabut (pada tumbuhan berkeping satu/monokotil) dan Akar Tunggang (pada tumbuhan berkeping dua/dikotil)."
           }
         ]
@@ -107,12 +132,12 @@
         "pages": [
           {
             "id": "batang-1",
-            "image": "/page/page-materi-batang-1.png",
+            "image": "/assets/image/batang-1.png",
             "content": "Batang berfungsi sebagai tempat tumbuhnya daun, bunga, dan buah. Batang juga berfungsi mengangkut air dan mineral dari akar ke daun, serta mengedarkan hasil fotosintesis dari daun ke seluruh tubuh tumbuhan."
           },
           {
             "id": "batang-2",
-            "image": "/page/page-materi-batang-2.png",
+            "image": "/assets/image/batang-2.jpg",
             "content": "Jenis-jenis batang:\n1. Batang Berkayu: Keras dan kuat, contohnya pohon jati dan mangga.\n2. Batang Basah: Lunak dan berair, contohnya bayam dan kangkung.\n3. Batang Rumput: Berongga dan beruas, contohnya padi dan jagung."
           }
         ]
@@ -125,12 +150,12 @@
         "pages": [
           {
             "id": "daun-1",
-            "image": "/page/page-materi-daun-1.png",
+            "image": "/assets/image/daun-1.jpg",
             "content": "Daun biasanya berwarna hijau karena mengandung klorofil. Fungsi utama daun adalah sebagai tempat fotosintesis (pembuatan makanan) dan tempat pernapasan tumbuhan melalui stomata."
           },
           {
             "id": "daun-2",
-            "image": "/page/page-materi-daun-2.png",
+            "image": "/assets/image/daun-2.jpg",
             "content": "Berdasarkan bentuk tulang daunnya, daun dibedakan menjadi:\n1. Menyirip (contoh: mangga)\n2. Menjari (contoh: singkong)\n3. Melengkung (contoh: sirih)\n4. Sejajar (contoh: jagung)"
           }
         ]
@@ -143,7 +168,7 @@
         "pages": [
           {
             "id": "bunga-1",
-            "image": "/page/page-materi-bunga-1.png",
+            "image": "/assets/image/bunga-1.png",
             "content": "Bunga adalah alat perkembangbiakan generatif. Bagian-bagian bunga meliputi:\n- Tangkai bunga\n- Kelopak (melindungi kuncup)\n- Mahkota (menarik serangga)\n- Benang sari (alat kelamin jantan)\n- Putik (alat kelamin betina)"
           }
         ]
@@ -156,7 +181,7 @@
         "pages": [
           {
             "id": "buah-1",
-            "image": "/page/page-materi-buah-1.png",
+            "image": "/assets/image/mangga-kasturi.jpg",
             "content": "Buah terbentuk setelah penyerbukan. Buah berfungsi melindungi biji dan seringkali menyimpan cadangan makanan. Bagian buah terdiri dari kulit buah, daging buah, dan biji."
           }
         ]
@@ -169,7 +194,7 @@
         "pages": [
           {
             "id": "biji-1",
-            "image": "/page/page-materi-biji-1.png",
+            "image": "/assets/image/biji.jpg",
             "content": "Biji merupakan hasil pembuahan. Jika ditanam, biji akan tumbuh menjadi tanaman baru. Biji dibedakan menjadi monokotil (berkeping satu) dan dikotil (berkeping dua)."
           }
         ]
@@ -185,7 +210,7 @@
     "intro": {
       "title": "Kuis Pengetahuan",
       "description": "Jawablah pertanyaan berikut untuk menguji pemahamanmu tentang bagian-bagian tumbuhan.",
-      "image": "/page/page-1.png"
+      "image": "/logo.jpg"
     },
     "questions": [
       {

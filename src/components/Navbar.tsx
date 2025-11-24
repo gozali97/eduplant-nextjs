@@ -4,15 +4,18 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
-import { Home, User, BookOpen, Puzzle, Menu } from "lucide-react";
+import { Home, User, BookOpen, Puzzle, Menu, Target, Book } from "lucide-react";
 import { useState } from "react";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { MusicPlayer } from "@/components/MusicPlayer";
+import Image from "next/image";
 
 const navItems = [
   { label: "Beranda", path: "/", icon: Home },
   { label: "Materi", path: "/materi", icon: BookOpen },
   { label: "Kuis", path: "/quiz", icon: Puzzle },
+  { label: "CP & TP", path: "/cp-tp", icon: Target },
+  { label: "Referensi", path: "/references", icon: Book },
   { label: "Profil", path: "/profile", icon: User },
 ];
 
@@ -21,18 +24,16 @@ export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b bg-gradient-to-r from-primary/5 via-background to-secondary/5 backdrop-blur-lg supports-[backdrop-filter]:bg-gradient-to-r supports-[backdrop-filter]:from-primary/5 supports-[backdrop-filter]:via-background/60 supports-[backdrop-filter]:to-secondary/5 shadow-sm">
+    <header className="sticky top-0 z-50 w-full border-b border-primary/10 bg-white/80 dark:bg-card/80 backdrop-blur-lg shadow-sm">
       <div className="w-full px-4 md:px-6">
         {/* Mobile Layout - Flex */}
         <div className="flex md:hidden h-16 items-center justify-between gap-2">
           {/* Logo - Mobile */}
           <Link href="/" className="flex items-center gap-2 group">
-            <div className="flex h-9 w-9 items-center justify-center rounded-xl bg-gradient-to-br from-primary to-primary/80 text-primary-foreground shadow-lg group-hover:shadow-xl group-hover:scale-105 transition-all duration-300">
-              <BookOpen className="h-4 w-4" />
-            </div>
+              <Image src={`/logo.jpg`} width={40} height={40} alt="logo" />
             <div className="flex flex-col">
               <span className="text-base font-bold tracking-tight bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
-                BioEdu
+                Marunting
               </span>
             </div>
           </Link>
@@ -104,12 +105,10 @@ export function Navbar() {
           {/* Logo - Desktop */}
           <div className="flex items-center justify-start">
             <Link href="/" className="flex items-center gap-2 group">
-              <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-gradient-to-br from-primary to-primary/80 text-primary-foreground shadow-lg group-hover:shadow-xl group-hover:scale-105 transition-all duration-300">
-                <BookOpen className="h-5 w-5" />
-              </div>
+              <Image src={`/logo.jpg`} width={50} height={50} alt="logo" />
               <div className="flex flex-col">
                 <span className="text-xl font-bold tracking-tight bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
-                  BioEdu
+                  Marunting
                 </span>
                 <span className="text-[10px] text-muted-foreground -mt-1 hidden sm:block">
                   Media Pembelajaran

@@ -147,7 +147,7 @@ export function QuizApp({ data }: QuizAppProps) {
   }
 
   return (
-    <div className="min-h-screen flex flex-col bg-muted/20">
+    <div className="min-h-screen flex flex-col">
       {/* Header Stats */}
       <div className="bg-background/80 backdrop-blur-md border-b sticky top-0 z-10 p-4">
         <div className="max-w-4xl mx-auto w-full flex items-center justify-between gap-4">
@@ -187,7 +187,7 @@ export function QuizApp({ data }: QuizAppProps) {
             transition={{ duration: 0.3 }}
             className="w-full"
           >
-            <Card className="overflow-hidden border-none shadow-xl bg-white dark:bg-card">
+            <Card className="overflow-hidden border border-primary/10 shadow-xl bg-white/85 dark:bg-card/85 backdrop-blur-md">
               <div className="p-6 md:p-8 text-center border-b bg-primary/5">
                 <h2 className="text-xl md:text-2xl font-semibold leading-relaxed">
                   {currentQuestion.question}

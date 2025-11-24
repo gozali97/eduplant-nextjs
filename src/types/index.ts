@@ -12,6 +12,7 @@ export interface NavigationItem {
   label: string;
   path: string;
   icon: string;
+  image: string;
 }
 
 export interface HomePageData {
@@ -48,11 +49,16 @@ export interface CompetenciesData {
   items: CompetencyItem[];
 }
 
+export interface ReferenceItem {
+  title: string;
+  link: string;
+}
+
 export interface ReferenceData {
   id: string;
   title: string;
   image: string;
-  items: string[];
+  items: ReferenceItem[];
 }
 
 export interface PageContent {
