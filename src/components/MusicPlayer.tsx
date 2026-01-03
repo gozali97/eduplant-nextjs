@@ -16,6 +16,7 @@ import {
   PopoverContent,
   PopoverTrigger,
 } from "@/components/ui/popover";
+import { useAudio } from "@/contexts/AudioContext";
 
 export function MusicPlayer() {
   const audioRef = useRef<HTMLAudioElement>(null);
@@ -23,36 +24,97 @@ export function MusicPlayer() {
   const [volume, setVolume] = useState(100);
   const [isMuted, setIsMuted] = useState(false);
 
+  // Get audio context
+  const { setBackgroundMusicRef, setIsMusicPlaying, isVoiceSpeaking } =
+    useAudio();
+
+  // Register audio ref with context
+  useEffect(() => {
+    if (audioRef.current) {
+      setBackgroundMusicRef(audioRef);
+    }
+  }, [setBackgroundMusicRef]);
+
+  // Pause music when voice is speaking
+  useEffect(() => {
+    if (isVoiceSpeaking && isPlaying && audioRef.current) {
+      audioRef.current.pause();
+    }
+  }, [isVoiceSpeaking, isPlaying]);
+
   useEffect(() => {
     if (audioRef.current) {
       audioRef.current.volume = volume / 100;
     }
   }, [volume]);
 
-  // Autoplay on mount
+  // Sync local state with actual audio playback state - MUST BE BEFORE AUTOPLAY
   useEffect(() => {
-    const playAudio = async () => {
+    const audio = audioRef.current;
+    if (!audio) return;
+
+    const handlePlay = () => {
+      setIsPlaying(true);
+      setIsMusicPlaying(true);
+    };
+
+    const handlePause = () => {
+      setIsPlaying(false);
+      setIsMusicPlaying(false);
+    };
+
+    const handleEnded = () => {
+      setIsPlaying(false);
+      setIsMusicPlaying(false);
+    };
+
+    // Add event listeners BEFORE autoplay
+    audio.addEventListener("play", handlePlay);
+    audio.addEventListener("pause", handlePause);
+    audio.addEventListener("ended", handleEnded);
+
+    // Cleanup
+    return () => {
+      audio.removeEventListener("play", handlePlay);
+      audio.removeEventListener("pause", handlePause);
+      audio.removeEventListener("ended", handleEnded);
+    };
+  }, [setIsMusicPlaying]);
+
+  // Autoplay on mount - AFTER event listeners are attached
+  useEffect(() => {
+    // Small delay to ensure event listeners are ready
+    const timer = setTimeout(async () => {
       if (audioRef.current) {
         try {
           await audioRef.current.play();
-          setIsPlaying(true);
+          // State will be updated by event listener
         } catch (error) {
           console.log("Autoplay prevented. User interaction required.");
           setIsPlaying(false);
+          setIsMusicPlaying(false);
         }
       }
-    };
-    playAudio();
-  }, []);
+    }, 100);
+
+    return () => clearTimeout(timer);
+  }, [setIsMusicPlaying]);
 
   const togglePlay = () => {
     if (audioRef.current) {
       if (isPlaying) {
         audioRef.current.pause();
+        setIsPlaying(false);
+        setIsMusicPlaying(false);
       } else {
-        audioRef.current.play();
+        audioRef.current.play().catch((error) => {
+          console.log("Could not play music:", error);
+          setIsPlaying(false);
+          setIsMusicPlaying(false);
+        });
+        setIsPlaying(true);
+        setIsMusicPlaying(true);
       }
-      setIsPlaying(!isPlaying);
     }
   };
 
@@ -87,12 +149,7 @@ export function MusicPlayer() {
 
   return (
     <>
-      <audio
-        ref={audioRef}
-        src="/audio/audio.mp3"
-        loop
-        onEnded={() => setIsPlaying(false)}
-      />
+      <audio ref={audioRef} src="/audio/audio.mp3" loop />
 
       <Popover>
         <PopoverTrigger asChild>

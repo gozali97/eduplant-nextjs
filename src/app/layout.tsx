@@ -3,6 +3,7 @@ import { Outfit } from "next/font/google";
 import "./globals.css";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
+import { AudioProvider } from "@/contexts/AudioContext";
 
 const outfit = Outfit({ subsets: ["latin"] });
 
@@ -19,11 +20,13 @@ export default function RootLayout({
   return (
     <html lang="id" suppressHydrationWarning>
       <body className={outfit.className}>
-        <div className="flex min-h-screen flex-col">
-          <Navbar />
-          <main className="flex-1">{children}</main>
-          {/* <Footer /> */}
-        </div>
+        <AudioProvider>
+          <div className="flex min-h-screen flex-col">
+            <Navbar />
+            <main className="flex-1">{children}</main>
+            {/* <Footer /> */}
+          </div>
+        </AudioProvider>
       </body>
     </html>
   );

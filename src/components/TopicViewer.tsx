@@ -8,6 +8,7 @@ import { Card } from "@/components/ui/card";
 import { ChevronLeft, ChevronRight, ArrowLeft, BookOpen } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import { VoiceNarrator } from "@/components/VoiceNarrator";
 
 interface TopicViewerProps {
   topic: Topic;
@@ -93,6 +94,14 @@ export function TopicViewer({ topic }: TopicViewerProps) {
                     </h2>
                     <div className="text-lg md:text-xl leading-relaxed text-foreground/90 whitespace-pre-line font-medium">
                       {currentPage.content}
+                    </div>
+
+                    {/* Voice Narrator Component */}
+                    <div className="mt-8 pt-6 border-t border-border/50">
+                      <VoiceNarrator
+                        title={topic.title}
+                        content={currentPage.content}
+                      />
                     </div>
                   </div>
                 </div>

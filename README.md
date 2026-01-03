@@ -5,6 +5,7 @@ Website edukasi interaktif untuk mempelajari bagian-bagian tumbuhan, dibangun de
 ## Fitur
 
 - **Materi Pembelajaran**: Penjelasan mendalam tentang Akar, Batang, Daun, Bunga, Buah, dan Biji.
+- **Penjelasan Suara AI**: Dengarkan penjelasan materi dengan narasi AI yang natural dan friendly.
 - **Kuis Interaktif**: Uji pemahaman dengan kuis pilihan ganda yang interaktif.
 - **Desain Responsif**: Tampilan yang cantik dan elegan di desktop maupun mobile.
 - **Animasi Halus**: Menggunakan Framer Motion untuk pengalaman pengguna yang menarik.
