@@ -60,7 +60,7 @@ Buatlah penjelasan dalam 1-2 paragraf yang natural seperti guru sedang berbicara
         },
       ],
       temperature: 0.7,
-      max_tokens: 500,
+      maxTokens: 500,
     });
 
     // Extract the generated narration
